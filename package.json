@@ -38,7 +38,7 @@
     "functional"
   ],
   "license": "ISC",
-  "name": "@comlock/semantic-ui-react-formik-functional",
+  "name": "@h3t/semantic-ui-react-formik-functional",
   "main": "src/index.mjs",
   "repository": {
     "type": "git",
