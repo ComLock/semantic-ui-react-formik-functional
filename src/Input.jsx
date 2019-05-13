@@ -1,6 +1,7 @@
 import {getIn} from 'formik';
 import {Input as SemanticUiReactInput} from 'semantic-ui-react';
 
+
 export const Input = ({
 	type = 'text',
 	name,
