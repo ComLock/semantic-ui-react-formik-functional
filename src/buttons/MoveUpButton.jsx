@@ -12,7 +12,7 @@ export const MoveUpButton = ({
 	visible = true
 }) => {
 	if(!visible) { return null; }
-	const prevIndex = index + 1;
+	const prevIndex = index - 1;
 	const currentValue = getIn(formik.values, path);
 	return <Button
 		disabled={disabled}
