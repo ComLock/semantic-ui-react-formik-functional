@@ -2,6 +2,7 @@
 //export {getIn, FieldArray} from 'formik';
 //export {Button, Form, Header, Icon, Table} from 'semantic-ui-react';
 
+export {Checkbox} from './Checkbox';
 export {Dropdown} from './Dropdown';
 export {Input} from './Input';
 
