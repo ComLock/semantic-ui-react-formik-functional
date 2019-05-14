@@ -10,3 +10,4 @@ export {InsertButton} from './buttons/InsertButton';
 export {MoveDownButton} from './buttons/MoveDownButton';
 export {MoveUpButton} from './buttons/MoveUpButton';
 export {RemoveButton} from './buttons/RemoveButton';
+export {SetButton} from './buttons/SetButton';
