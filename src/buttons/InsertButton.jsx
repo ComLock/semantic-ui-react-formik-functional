@@ -8,7 +8,8 @@ export const InsertButton = ({
 	formik,
 	index,
 	path,
-	value
+	value,
+	...rest
 }) => {
 	const nextIndex = index + 1;
 	const currentValue = getIn(formik.values, path);
@@ -17,5 +18,6 @@ export const InsertButton = ({
 		icon
 		onClick={() => {formik.setFieldValue(path, insert(currentValue, nextIndex, value))}}
 		type='button'
+		{...rest}
 	><Icon color='green' name='plus'/></Button>;
 }
