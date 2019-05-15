@@ -10,6 +10,7 @@ export const RemoveButton = ({
 	currentValue = getIn(formik.values, path),
 	disabled = false, //currentValue.length < 2,
 	index,
+	text = '',
 	visible = true, //currentValue.length > 1
 	...rest
 }) => {
@@ -21,5 +22,5 @@ export const RemoveButton = ({
 		onClick={() => {formik.setFieldValue(path, remove(currentValue, index))}}
 		type='button'
 		{...rest}
-	><Icon color='red' name='minus'/></Button>;
+	><Icon color='red' name='minus'/>{text}</Button>;
 }

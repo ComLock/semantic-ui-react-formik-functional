@@ -9,6 +9,7 @@ export const MoveUpButton = ({
 	index,
 	disabled = index < 1,
 	path,
+	text = '',
 	visible = true,
 	...rest
 }) => {
@@ -21,5 +22,5 @@ export const MoveUpButton = ({
 		onClick={() => {formik.setFieldValue(path, swap(currentValue, index, prevIndex))}}
 		type='button'
 		{...rest}
-	><Icon color='blue' name='arrow up'/></Button>;
+	><Icon color='blue' name='arrow up'/>{text}</Button>;
 }
